@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Courses & Academics | K.V College</title>
+<!-- Google Fonts: EB Garamond & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "background": "#f7f9fb",
+            "on-tertiary-fixed": "#001a42",
+            "on-error": "#ffffff",
+            "on-primary": "#ffffff",
+            "on-secondary-container": "#663500",
+            "on-secondary-fixed-variant": "#6e3900",
+            "on-primary-fixed-variant": "#314863",
+            "primary": "#001428",
+            "error": "#ba1a1a",
+            "tertiary-fixed-dim": "#adc6ff",
+            "on-tertiary": "#ffffff",
+            "surface-bright": "#f7f9fb",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#d8e2ff",
+            "surface-variant": "#e0e3e5",
+            "outline-variant": "#c3c6ce",
+            "on-error-container": "#93000a",
+            "on-primary-container": "#7991af",
+            "on-tertiary-container": "#498cff",
+            "secondary-fixed-dim": "#ffb77d",
+            "surface-tint": "#49607c",
+            "error-container": "#ffdad6",
+            "surface-container-highest": "#e0e3e5",
+            "inverse-surface": "#2d3133",
+            "on-secondary-fixed": "#2f1500",
+            "primary-fixed": "#d1e4ff",
+            "surface-container": "#eceef0",
+            "surface-container-high": "#e6e8ea",
+            "on-tertiary-fixed-variant": "#004395",
+            "secondary-container": "#fe932c",
+            "surface": "#f7f9fb",
+            "surface-dim": "#d8dadc",
+            "primary-fixed-dim": "#b0c9e8",
+            "surface-container-low": "#f2f4f6",
+            "primary-container": "#0f2942",
+            "secondary-fixed": "#ffdcc3",
+            "tertiary-container": "#002659",
+            "outline": "#74777e",
+            "tertiary": "#001232",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#011d35",
+            "on-surface-variant": "#43474d",
+            "on-background": "#191c1e",
+            "secondary": "#904d00",
+            "inverse-on-surface": "#eff1f3",
+            "inverse-primary": "#b0c9e8",
+            "on-surface": "#191c1e"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "margin": "3rem",
+            "margin-mobile": "1.25rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-hero": ["EB Garamond"],
+            "display-hero-mobile": ["EB Garamond"],
+            "headline-md-mobile": ["EB Garamond"],
+            "title-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["EB Garamond"],
+            "title-lg": ["EB Garamond"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["EB Garamond"],
+            "label-eyebrow": ["Plus Jakarta Sans"],
+            "headline-md": ["EB Garamond"]
+          },
+          "fontSize": {
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-lg": ["22px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-eyebrow": ["11px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "800" }],
+            "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: 'liga';
+    }
+    .academic-crest-glow {
+      box-shadow: 0 10px 25px -5px rgba(15, 41, 66, 0.08), 0 8px 10px -6px rgba(15, 41, 66, 0.04);
+    }
+    .gold-accent-line {
+      background: linear-gradient(90deg, #904d00 0%, #fe932c 50%, #904d00 100%);
+    }
+  </style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen flex flex-col">
+<!-- 1. Top Institutional Urgent/Alert Bar -->
+<aside aria-label="Announcement Banner" class="bg-primary-container text-on-primary py-2 px-6 border-b border-on-primary-container/20 relative z-50">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-xs">
+<div class="flex items-center gap-2 flex-wrap text-center md:text-left">
+<span class="inline-flex items-center gap-1 bg-secondary text-on-secondary font-label-md text-label-md px-2.5 py-0.5 rounded-lg font-bold">
+<span class="material-symbols-outlined text-[14px]">campaign</span>
+          Notice
+        </span>
+<span class="font-body-sm text-body-sm text-surface-variant font-medium">
+          Admissions Open for Academic Year 2025–26 | Merit Scholarships Available | Entrance Exam Registration Deadline: July 15
+        </span>
+</div>
+<div class="flex items-center gap-5 text-surface-variant font-label-md text-label-md divide-x divide-outline/40">
+<a class="hover:text-secondary-fixed text-secondary-fixed underline underline-offset-2 flex items-center gap-1 font-semibold transition-colors" href="admissions.html">
+          Explore Admissions
+          <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+<div class="pl-4 flex items-center gap-4 hidden lg:flex">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">phone_in_talk</span>
+            +91 (0) 11 2894 5600
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">mail</span>
+            admissions@kvcollege.edu.in
+          </span>
+</div>
+</div>
+</div>
+</aside>
+<!-- 2. Sticky Top Navigation Bar (Shared Component Anchor) -->
+<header class="sticky top-0 z-40 bg-surface-container-lowest dark:bg-primary shadow-sm dark:shadow-none border-b border-surface-variant dark:border-outline-variant">
+<div class="w-full mx-auto px-6 max-w-7xl flex items-center justify-between h-20">
+<!-- Brand Crest & Academic Name -->
+<a class="flex items-center gap-3.5 group focus:outline-none" href="#">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-secondary-fixed flex items-center justify-center font-serif text-2xl font-bold border border-secondary/30 academic-crest-glow">
+<span class="material-symbols-outlined text-3xl text-secondary-container">school</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="text-title-lg font-title-lg text-primary dark:text-on-primary font-bold tracking-tight">K.V College</span>
+<span class="hidden sm:inline-block px-1.5 py-0.5 rounded text-[10px] font-bold bg-surface-container-high text-primary border border-outline-variant/60 uppercase">Grade 'A+' NAAC</span>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-wider">Heritage of Academic Distinction</span>
+</div>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden lg:flex items-center space-x-8">
+<!-- Active link: Home -->
+<a class="border-b-2 border-secondary text-primary dark:text-on-primary font-title-md text-title-md pb-1 transition-colors hover:text-secondary dark:hover:text-secondary-fixed" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-label-lg text-label-lg transition-colors hover:text-secondary dark:hover:text-secondary-fixed" href="about.html">About Us</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-label-lg text-label-lg transition-colors hover:text-secondary dark:hover:text-secondary-fixed" href="admissions.html">Admissions</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-label-lg text-label-lg transition-colors hover:text-secondary dark:hover:text-secondary-fixed" href="courses.html">Academics</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-label-lg text-label-lg transition-colors hover:text-secondary dark:hover:text-secondary-fixed" href="campus-life.html">Campus Life</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-label-lg text-label-lg transition-colors hover:text-secondary dark:hover:text-secondary-fixed" href="contact.html">Contact &amp; Visit</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-3">
+<!-- Trailing Icon Actions -->
+<button aria-label="Search Catalog" class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button aria-label="Notifications" class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors relative" type="button">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+<!-- Secondary Action: Student Portal -->
+<a class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg border border-outline/30 text-primary font-label-lg text-label-lg hover:bg-surface-container transition-all" href="#portal">
+<span class="material-symbols-outlined text-[18px]">account_circle</span>
+          Student Portal
+        </a>
+<!-- Primary Institutional CTA: Apply Now -->
+<a class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow hover:bg-primary transition-all focus:ring-2 focus:ring-secondary focus:ring-offset-2" href="admissions.html">
+<span>Apply Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main class="flex-grow bg-surface">
+        <div class="max-w-7xl mx-auto px-6 py-16" data-aos="fade-up">
+            <h1 class="text-headline-lg font-headline-lg text-primary mb-6">Academic Programs</h1>
+            <p class="text-body-lg mb-8">All courses are available in our college. From Humanities to Sciences, our comprehensive curriculum is designed to equip you with the skills needed for the future.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-title-lg font-title-lg text-primary mb-2">Science & Technology</h3>
+                    <p class="text-body-sm text-on-surface-variant mb-4">B.Sc, M.Sc, B.Tech, Ph.D programs with hi-tech labs.</p>
+                    <a href="#" class="text-secondary font-label-lg font-bold">View Programs &rarr;</a>
+                </div>
+                <div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-title-lg font-title-lg text-primary mb-2">Commerce & Management</h3>
+                    <p class="text-body-sm text-on-surface-variant mb-4">B.Com, BBA, MBA, M.Com programs with industry integration.</p>
+                    <a href="#" class="text-secondary font-label-lg font-bold">View Programs &rarr;</a>
+                </div>
+                <div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-title-lg font-title-lg text-primary mb-2">Humanities & Arts</h3>
+                    <p class="text-body-sm text-on-surface-variant mb-4">BA, MA, Fine Arts, Ph.D focusing on critical thinking.</p>
+                    <a href="#" class="text-secondary font-label-lg font-bold">View Programs &rarr;</a>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-primary-container text-on-primary p-8 rounded-xl flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-4xl mb-4 text-secondary-fixed">workspace_premium</span>
+                <h3 class="text-headline-md font-headline-md mb-2">Best Faculty & Hi-Tech Classes</h3>
+                <p class="text-body-lg max-w-2xl">Learn from renowned PhD scholars in smart digital interactive amphitheaters equipped with high-speed campus networks.</p>
+            </div>
+        </div>
+        </main>
+<!-- 8. Comprehensive Institutional Footer (Shared Component Anchor) -->
+<footer class="bg-primary dark:bg-surface-container-lowest text-on-primary dark:text-primary border-t border-primary-container dark:border-surface-variant" id="contact">
+<div class="w-full mx-auto px-6 py-12 max-w-7xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-primary-container/40">
+<!-- Institutional Identity & Accreditation -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-secondary">school</span>
+</div>
+<div>
+<span class="text-headline-sm font-headline-sm text-on-primary dark:text-primary font-bold tracking-tight">K.V College</span>
+<p class="text-xs text-on-primary-container">Affiliated to State Central University · Est. 1984</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container dark:text-on-surface-variant leading-relaxed max-w-sm">
+            Dedicated to imparting value-based educational experiences and spearheading technological innovation. Certified Grade 'A+' by the National Assessment and Accreditation Council (NAAC).
+          </p>
+<div class="flex items-center gap-3 pt-2">
+<span class="px-2.5 py-1 bg-surface-container-low/10 rounded border border-surface-variant/20 text-xs font-semibold text-secondary-fixed">
+              NAAC Grade 'A+'
+            </span>
+<span class="px-2.5 py-1 bg-surface-container-low/10 rounded border border-surface-variant/20 text-xs font-semibold text-secondary-fixed">
+              UGC Section 2(f) &amp; 12(B)
+            </span>
+<span class="px-2.5 py-1 bg-surface-container-low/10 rounded border border-surface-variant/20 text-xs font-semibold text-secondary-fixed">
+              NIRF Top 100
+            </span>
+</div>
+</div>
+<!-- Campus Location & Helpline -->
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-primary mb-4 uppercase tracking-wider">Campus Address</h4>
+<address class="not-italic text-on-primary-container dark:text-on-surface-variant font-body-sm text-body-sm space-y-2">
+<p>K.V College Main Campus,</p>
+<p>Knowledge Boulevard, Sector 12,</p>
+<p>Institutional Area, New Delhi — 110078</p>
+<div class="pt-2 text-surface-variant">
+<p class="font-medium text-white">General Helpline:</p>
+<p>+91 (0) 11 2894 5600 / 5601</p>
+<p>registrar@kvcollege.edu.in</p>
+</div>
+</address>
+</div>
+<!-- Quick Links (FromJson) -->
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-primary mb-4 uppercase tracking-wider">Key Portals</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors focus:ring-2 focus:ring-secondary focus:outline-none" href="#accreditation">Accreditation &amp; Approvals</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors focus:ring-2 focus:ring-secondary focus:outline-none" href="#map">Campus Map &amp; Directions</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors focus:ring-2 focus:ring-secondary focus:outline-none" href="#emergency">Emergency Contacts</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors focus:ring-2 focus:ring-secondary focus:outline-none" href="#faculty">Faculty Directory</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors focus:ring-2 focus:ring-secondary focus:outline-none" href="#alumni">Alumni Portal</a></li>
+</ul>
+</div>
+<!-- Statutory Compliance & Welfare -->
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-primary mb-4 uppercase tracking-wider">Statutory Cells</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#anti-ragging">Anti-Ragging Squad (Toll Free)</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#grievance">Student Grievance Redressal</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#iqac">Internal Quality Assurance Cell (IQAC)</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#hostel-rules">Hostel Rules &amp; Conduct Code</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#careers">Careers @ K.V College</a></li>
+</ul>
+</div>
+</div>
+<!-- Copyright Sub-footer -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-primary-container">
+<p>© 2025 K.V College. Accredited Grade 'A' Institution. All rights reserved.</p>
+<div class="flex items-center gap-6 text-xs">
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#privacy">Privacy Policy</a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#terms">Terms of Service</a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#disclaimer">Mandatory Disclosure</a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#sitemap">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({duration: 800, once: true});</script>
+</body></html>

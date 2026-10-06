@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>K.V College | Excellence in Higher Education &amp; Research</title>
+<!-- Google Fonts: EB Garamond & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "background": "#f7f9fb",
+            "on-tertiary-fixed": "#001a42",
+            "on-error": "#ffffff",
+            "on-primary": "#ffffff",
+            "on-secondary-container": "#663500",
+            "on-secondary-fixed-variant": "#6e3900",
+            "on-primary-fixed-variant": "#314863",
+            "primary": "#001428",
+            "error": "#ba1a1a",
+            "tertiary-fixed-dim": "#adc6ff",
+            "on-tertiary": "#ffffff",
+            "surface-bright": "#f7f9fb",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#d8e2ff",
+            "surface-variant": "#e0e3e5",
+            "outline-variant": "#c3c6ce",
+            "on-error-container": "#93000a",
+            "on-primary-container": "#7991af",
+            "on-tertiary-container": "#498cff",
+            "secondary-fixed-dim": "#ffb77d",
+            "surface-tint": "#49607c",
+            "error-container": "#ffdad6",
+            "surface-container-highest": "#e0e3e5",
+            "inverse-surface": "#2d3133",
+            "on-secondary-fixed": "#2f1500",
+            "primary-fixed": "#d1e4ff",
+            "surface-container": "#eceef0",
+            "surface-container-high": "#e6e8ea",
+            "on-tertiary-fixed-variant": "#004395",
+            "secondary-container": "#fe932c",
+            "surface": "#f7f9fb",
+            "surface-dim": "#d8dadc",
+            "primary-fixed-dim": "#b0c9e8",
+            "surface-container-low": "#f2f4f6",
+            "primary-container": "#0f2942",
+            "secondary-fixed": "#ffdcc3",
+            "tertiary-container": "#002659",
+            "outline": "#74777e",
+            "tertiary": "#001232",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#011d35",
+            "on-surface-variant": "#43474d",
+            "on-background": "#191c1e",
+            "secondary": "#904d00",
+            "inverse-on-surface": "#eff1f3",
+            "inverse-primary": "#b0c9e8",
+            "on-surface": "#191c1e"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "margin": "3rem",
+            "margin-mobile": "1.25rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-hero": ["EB Garamond"],
+            "display-hero-mobile": ["EB Garamond"],
+            "headline-md-mobile": ["EB Garamond"],
+            "title-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["EB Garamond"],
+            "title-lg": ["EB Garamond"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["EB Garamond"],
+            "label-eyebrow": ["Plus Jakarta Sans"],
+            "headline-md": ["EB Garamond"]
+          },
+          "fontSize": {
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-lg": ["22px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-eyebrow": ["11px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "800" }],
+            "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: 'liga';
+    }
+    .academic-crest-glow {
+      box-shadow: 0 10px 25px -5px rgba(15, 41, 66, 0.08), 0 8px 10px -6px rgba(15, 41, 66, 0.04);
+    }
+    .gold-accent-line {
+      background: linear-gradient(90deg, #904d00 0%, #fe932c 50%, #904d00 100%);
+    }
+  </style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen flex flex-col">
+<!-- 1. Top Institutional Urgent/Alert Bar -->
+<aside aria-label="Announcement Banner" class="bg-primary-container text-on-primary py-2 px-6 border-b border-on-primary-container/20 relative z-50">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-xs">
+<div class="flex items-center gap-2 flex-wrap text-center md:text-left">
+<span class="inline-flex items-center gap-1 bg-secondary text-on-secondary font-label-md text-label-md px-2.5 py-0.5 rounded-lg font-bold">
+<span class="material-symbols-outlined text-[14px]">campaign</span>
+          Notice
+        </span>
+<span class="font-body-sm text-body-sm text-surface-variant font-medium">
+          Admissions Open for Academic Year 2025–26 | Merit Scholarships Available | Entrance Exam Registration Deadline: July 15
+        </span>
+</div>
+<div class="flex items-center gap-5 text-surface-variant font-label-md text-label-md divide-x divide-outline/40">
+<a class="hover:text-secondary-fixed text-secondary-fixed underline underline-offset-2 flex items-center gap-1 font-semibold transition-colors" href="admissions.html">
+          Explore Admissions
+          <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+<div class="pl-4 flex items-center gap-4 hidden lg:flex">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">phone_in_talk</span>
+            +91 (0) 11 2894 5600
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">mail</span>
+            admissions@kvcollege.edu.in
+          </span>
+</div>
+</div>
+</div>
+</aside>
+<!-- 2. Sticky Top Navigation Bar (Shared Component Anchor) -->
+<header class="sticky top-0 z-40 bg-surface-container-lowest dark:bg-primary shadow-sm dark:shadow-none border-b border-surface-variant dark:border-outline-variant">
+<div class="w-full mx-auto px-6 max-w-7xl flex items-center justify-between h-20">
+<!-- Brand Crest & Academic Name -->
+<a class="flex items-center gap-3.5 group focus:outline-none" href="#">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-secondary-fixed flex items-center justify-center font-serif text-2xl font-bold border border-secondary/30 academic-crest-glow">
+<span class="material-symbols-outlined text-3xl text-secondary-container">school</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="text-title-lg font-title-lg text-primary dark:text-on-primary font-bold tracking-tight">K.V College</span>
+<span class="hidden sm:inline-block px-1.5 py-0.5 rounded text-[10px] font-bold bg-surface-container-high text-primary border border-outline-variant/60 uppercase">Grade 'A+' NAAC</span>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-wider">Heritage of Academic Distinction</span>
+</div>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden lg:flex items-center space-x-8">
+<!-- Active link: Home -->
+<a class="border-b-2 border-secondary text-primary dark:text-on-primary font-title-md text-title-md pb-1 transition-colors hover:text-secondary dark:hover:text-secondary-fixed" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-label-lg text-label-lg transition-colors hover:text-secondary dark:hover:text-secondary-fixed" href="about.html">About Us</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-label-lg text-label-lg transition-colors hover:text-secondary dark:hover:text-secondary-fixed" href="admissions.html">Admissions</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-label-lg text-label-lg transition-colors hover:text-secondary dark:hover:text-secondary-fixed" href="courses.html">Academics</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-label-lg text-label-lg transition-colors hover:text-secondary dark:hover:text-secondary-fixed" href="campus-life.html">Campus Life</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-label-lg text-label-lg transition-colors hover:text-secondary dark:hover:text-secondary-fixed" href="contact.html">Contact &amp; Visit</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-3">
+<!-- Trailing Icon Actions -->
+<button aria-label="Search Catalog" class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button aria-label="Notifications" class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors relative" type="button">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+<!-- Secondary Action: Student Portal -->
+<a class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg border border-outline/30 text-primary font-label-lg text-label-lg hover:bg-surface-container transition-all" href="#portal">
+<span class="material-symbols-outlined text-[18px]">account_circle</span>
+          Student Portal
+        </a>
+<!-- Primary Institutional CTA: Apply Now -->
+<a class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow hover:bg-primary transition-all focus:ring-2 focus:ring-secondary focus:ring-offset-2" href="admissions.html">
+<span>Apply Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- 3. Welcoming Hero Section -->
+<section class="relative overflow-hidden bg-surface-container-lowest pt-10 pb-16 lg:pt-16 lg:pb-24 border-b border-surface-variant" id="hero">
+<!-- Ambient Classic Watermark Background Motif -->
+<div class="absolute right-0 top-0 -mr-20 -mt-20 w-[600px] h-[600px] rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none -z-0"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Hero Narrative Copy -->
+<div class="lg:col-span-7 flex flex-col space-y-6">
+<div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-lg bg-surface-container border border-surface-variant self-start">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-primary tracking-widest">Autonomous Institution · Est. 1984</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-primary leading-tight font-serif tracking-tight">
+              Welcome to K.V College — Where Ambition Meets Academic Excellence.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Fostering enlightened leadership, pioneering scientific research, and holistic student development. At K.V College, we empower scholars across diverse academic disciplines with an esteemed faculty, immersive smart laboratories, and vibrant campus life.
+            </p>
+<!-- Dual CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="px-7 py-3.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:shadow-lg transition-all flex items-center gap-2" href="courses.html">
+<span class="material-symbols-outlined text-secondary-fixed">school</span>
+                Explore Academic Programs
+              </a>
+<a class="px-6 py-3.5 rounded-lg border border-primary-container/30 hover:border-primary-container text-primary font-label-lg text-label-lg hover:bg-surface-container-low transition-all flex items-center gap-2" href="#virtual-tour">
+<span class="material-symbols-outlined text-secondary">play_circle</span>
+                Schedule a Campus Tour
+              </a>
+</div>
+<!-- Quick Trust Statistics Ribbon -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-surface-variant">
+<div>
+<div class="font-headline-md text-headline-md text-primary font-serif font-bold">A+</div>
+<div class="font-label-md text-label-md text-on-surface-variant">NAAC Accredited</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-serif font-bold">100%</div>
+<div class="font-label-md text-label-md text-on-surface-variant">Placement Support</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-serif font-bold">15,000+</div>
+<div class="font-label-md text-label-md text-on-surface-variant">Alumni Worldwide</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-serif font-bold">45+</div>
+<div class="font-label-md text-label-md text-on-surface-variant">Degree Programs</div>
+</div>
+</div>
+</div>
+<!-- Hero Architectural Image Composition -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<!-- Backdrop border stroke -->
+<div class="absolute -inset-2 rounded-xl bg-gradient-to-tr from-secondary-fixed to-primary-fixed opacity-40 blur-lg"></div>
+<!-- Main Campus Quad & Library Frame -->
+<div class="relative rounded-xl overflow-hidden bg-surface-container-lowest border border-outline-variant shadow-xl">
+<div class="h-96 w-full relative">
+<img class="w-full h-full object-cover" data-alt="A grand collegiate library and central campus quad of an esteemed university during a bright golden morning. Students walk along brick pathways carrying academic satchels surrounded by neoclassical architecture, manicured lawns, and modern glass-walled study pavilions. The composition exudes authoritative collegiate prestige with deep navy shadows and warm amber light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsxQs-zbt-ko9JKStv2MhlvwOYIKLEy3_-qd7eBFXT04ecx3Hc1f5H-n1XOIrR67MOvgboFtVPxi1q4kOPm_Fedp_OKKHt8NZxvCflH8LHXVC6r4-P-iGmaurAYO9z0bpHEUXKi0IEP3CKnFnIZmzYF4AHfyK-Sw88KPDnkwcjcavgXt8jlCjex0WWcIvSJfwqqWthses5ZEqOX202NyuSztpUsyH-HlejnMEFqAnscyGXCNBpjvao-d7gqHh7d-eXj5O524kAmfY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-on-primary">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-secondary uppercase tracking-widest text-on-secondary mb-1 inline-block">Central Campus</span>
+<p class="font-serif text-lg font-medium leading-snug">The Dr. Sarvepalli Radhakrishnan Knowledge Center &amp; Quadrangle</p>
+</div>
+</div>
+<!-- Floating Merit Card -->
+<div class="p-4 bg-surface-container-lowest border-t border-surface-variant flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-primary">Academic Excellence Award</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Recognized as Top Multidisciplinary College</p>
+</div>
+</div>
+<span class="text-xs font-bold text-secondary">2024–2025</span>
+</div>
+</div>
+<!-- Decorative Badge -->
+<div class="absolute -bottom-5 -left-5 bg-primary text-on-primary p-3 rounded-lg shadow-lg border border-secondary/40 hidden sm:flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">auto_stories</span>
+<div>
+<div class="text-xs uppercase font-label-eyebrow tracking-widest text-secondary-fixed">Central Library</div>
+<div class="text-sm font-semibold">120,000+ Print &amp; Digital Volumes</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Core Highlight Showcase Section (Best Faculty, Hi-Tech Classes, Hostel Facilities) -->
+<section class="py-20 bg-background relative" id="why-kv">
+<div class="max-w-7xl mx-auto px-6">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-surface-container border border-surface-variant mb-3">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary font-bold tracking-widest">Institutional Pillars</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-serif text-primary mb-4">
+            Why Choose K.V College
+          </h2>
+<div class="w-16 h-1 gold-accent-line mx-auto mb-4 rounded-full"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+<strong>All Courses Are Available</strong> — Empowering every academic journey through world-class mentors, modern pedagogical infrastructure, and secure residential living.
+          </p>
+</div>
+<!-- Signature 3 Pillars Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pillar 1: Best Faculty -->
+<div class="group bg-surface-container-lowest rounded-xl border border-surface-variant hover:border-outline-variant p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-xl relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-transparent group-hover:bg-secondary transition-all"></div>
+<div>
+<div class="w-14 h-14 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-6 group-hover:scale-105 transition-transform border border-outline-variant/40">
+<span class="material-symbols-outlined text-3xl text-secondary">psychology</span>
+</div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest">Scholastic Leadership</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-xs font-semibold text-primary">15:1 Ratio</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-serif text-primary mb-3">
+                Best Faculty
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                Learn directly from renowned PhD scholars, Fulbright recipients, and experienced industry veterans dedicated to one-on-one student mentoring and groundbreaking research initiatives.
+              </p>
+<ul class="space-y-2.5 border-t border-surface-variant pt-4 text-on-surface-variant text-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>92% Faculty with Doctorate Degrees</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Dedicated Career &amp; Research Mentorship</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Regular Masterclasses by Global Scholars</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-4 border-t border-surface-variant flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Meet Our Scholars</span>
+<a aria-label="Explore Faculty Profiles" class="text-secondary hover:text-secondary-container p-1 rounded transition-colors" href="#faculty">
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Pillar 2: Hi-Tech Classes -->
+<div class="group bg-surface-container-lowest rounded-xl border border-surface-variant hover:border-outline-variant p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-xl relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-transparent group-hover:bg-secondary transition-all"></div>
+<div>
+<div class="w-14 h-14 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-6 group-hover:scale-105 transition-transform border border-outline-variant/40">
+<span class="material-symbols-outlined text-3xl text-secondary">desktop_windows</span>
+</div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest">Future-Ready Classrooms</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-xs font-semibold text-primary">10 Gbps Fiber</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-serif text-primary mb-3">
+                Hi-Tech Classes
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                Smart interactive amphitheaters, high-performance computing centers, AI/IoT labs, and digital lecture-capture platforms bridging tactile and hybrid pedagogical methods.
+              </p>
+<ul class="space-y-2.5 border-t border-surface-variant pt-4 text-on-surface-variant text-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Interactive 4K Touch Displays in All Halls</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>AI, Robotics &amp; Cloud Computing Laboratories</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>LMS Integration with Synchronous Recording</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-4 border-t border-surface-variant flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Tour Digital Labs</span>
+<a aria-label="Tour Digital Labs" class="text-secondary hover:text-secondary-container p-1 rounded transition-colors" href="#virtual-tour">
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Pillar 3: Hostel Facilities -->
+<div class="group bg-surface-container-lowest rounded-xl border border-surface-variant hover:border-outline-variant p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-xl relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-transparent group-hover:bg-secondary transition-all"></div>
+<div>
+<div class="w-14 h-14 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-6 group-hover:scale-105 transition-transform border border-outline-variant/40">
+<span class="material-symbols-outlined text-3xl text-secondary">hotel</span>
+</div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest">Residential Life</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-xs font-semibold text-primary">24/7 Security</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-serif text-primary mb-3">
+                Hostel Facilities
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                Separate residential blocks for men and women featuring air-conditioned suites, hygienic multi-cuisine dining, Wi-Fi quiet study lounges, and round-the-clock healthcare support.
+              </p>
+<ul class="space-y-2.5 border-t border-surface-variant pt-4 text-on-surface-variant text-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Biometric Entry &amp; Continuous CCTV Coverage</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Nutritious 4-Meal Organic Dining Plan</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Dedicated Gymnasium &amp; Indoor Sports Arena</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-4 border-t border-surface-variant flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Hostel Admissions Guide</span>
+<a aria-label="Hostel Admissions Guide" class="text-secondary hover:text-secondary-container p-1 rounded transition-colors" href="#hostel">
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Facilities Visual Photographic Grid -->
+<div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="relative rounded-lg overflow-hidden border border-surface-variant h-52 group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An accomplished female professor mentoring undergraduate scholars in an elegant seminar room. Sunlight filters through tall colonial windows onto mahogany tables covered in notebooks and digital tablets. The scene evokes scholastic focus, rigorous discussion, and modern collegiate prestige." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgXDeKWRtmZwbxojw-mdKyKrESYUNHCnxUTi0xRLqKsSPwJqNaKw72mIhacncvtvYdUnrz0L6Acr49zQ9mBQkd1sAmOL4tgG6ORA-KVfkp-4-IcoMjWmHPcRkOlO2ZOsWT3y05-Yu7o94m-f6WnkuQBGrmqr6lDtXQXTXgoYgQXJ9pnlNd9xP4j-2eL_6G-846EgfeLMrdbT_RHgaWSbeByzznRMgiRnRQLHpihCPpiLJVqNVZnoOsgAK3pxP7WtJ05cygBHi_HFg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-4">
+<span class="text-white font-title-md text-title-md font-serif">Distinguished Mentorship</span>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden border border-surface-variant h-52 group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A futuristic university smart auditorium filled with students utilizing interactive displays and laptops. An electronic podium displays algorithmic data charts on a massive high-definition curved screen under warm ambient lighting and navy architectural accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi0rq1gLgyeKuOFsIieBXXng95yojonu1NbKjdlZR7ZgXEUtysw6bqDcMUUJkBWBARJ6B-bsMj7_EcGdeAIudYgwv1m3gn5PjRhW8R-gou3ZyUCbeT5bVeIWNHwk4RQHBRyr3UdiHZEqrjPwpXrQBEcofC0p1WMVlpgI60Df9u5ComN5ykFy1BDV_mm6Sg7OLiyLr3fL8R3Ux370qbWoWU5GFiIrjH-JUSNFdqoDczftgbfrIb1IlD80lv9M10AXYQKX-Sr98rqBI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-4">
+<span class="text-white font-title-md text-title-md font-serif">Next-Gen Smart Amphitheaters</span>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden border border-surface-variant h-52 group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean, cozy, and modern college dormitory suite with contemporary wooden study desks, ergonomic chairs, ergonomic bunk bedding, and a panoramic window overlooking green campus sports grounds during daytime. Warm aesthetic with collegiate blankets and pristine lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBayuSgJOosW_eQW74p6QyyMAVAhjOlKDeHvmA7d_IL6hZYG948nrsDjozaIVyrGNe7EozNOEABgc-5eRxv_-goyWJSTl9CmCaQZCVfLiRmxl1WJiRdnjmlcUE5pFPoBuNHpEgSSVNf53GyyomkcDn-Me30XyOFsWyTMMRPLZZ5_2hLeAF-FsPcWsXUQuNuO9YVKCkU196DoV5Iy3ZO9rTF0qGEGvxp38vtUn9JSGJXzVhUhBHFbAbE9aFZY9C8z1EpRlVjpRHu__o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-4">
+<span class="text-white font-title-md text-title-md font-serif">Comfortable Student Residence</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. "All Courses Are Available" Academic Explorer Section -->
+<section class="py-20 bg-surface-container-lowest border-y border-surface-variant" id="academics">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-surface-container border border-surface-variant mb-3">
+<span class="material-symbols-outlined text-secondary text-sm">workspace_premium</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary font-bold tracking-widest">Academic Degrees &amp; Programs</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-serif text-primary">
+              All Courses Are Available
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-xl">
+              From foundational undergraduate degrees to specialized postgraduate studies and doctorate research, find your calling across our accredited faculties.
+            </p>
+</div>
+<!-- Academic Search and Filter Bar -->
+<div class="flex items-center gap-3">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline">search</span>
+<input class="pl-10 pr-4 py-2.5 bg-surface-container-low border border-surface-variant rounded-lg text-sm w-72 focus:ring-2 focus:ring-primary focus:outline-none" placeholder="Search degrees (e.g. Computer Science, MBA)..." type="text"/>
+</div>
+<a class="px-4 py-2.5 rounded-lg border border-primary-container text-primary font-label-md text-label-md hover:bg-surface-container transition-all flex items-center gap-1.5 whitespace-nowrap" href="#brochure">
+<span class="material-symbols-outlined text-base">download</span>
+              Curriculum PDF
+            </a>
+</div>
+</div>
+<!-- Academic Level Tabs -->
+<div class="flex flex-wrap items-center gap-2 border-b border-surface-variant pb-4 mb-8">
+<button class="px-5 py-2 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg font-bold">
+            All Programs (45+)
+          </button>
+<button class="px-5 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary font-label-lg text-label-lg transition-colors">
+            Science &amp; Technology
+          </button>
+<button class="px-5 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary font-label-lg text-label-lg transition-colors">
+            Commerce &amp; Management
+          </button>
+<button class="px-5 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary font-label-lg text-label-lg transition-colors">
+            Computer Applications &amp; AI
+          </button>
+<button class="px-5 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary font-label-lg text-label-lg transition-colors">
+            Humanities &amp; Social Sciences
+          </button>
+</div>
+<!-- Course Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="200">
+<!-- Program Card 1 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-6 hover:shadow-lg transition-all group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-1 rounded bg-[#FEF3C7] text-[#92400E] font-label-eyebrow text-label-eyebrow uppercase font-bold">B.Tech Honors</span>
+<span class="text-xs text-on-surface-variant font-medium">4 Years · Full-Time</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-serif text-primary group-hover:text-secondary transition-colors mb-2">
+                Computer Science &amp; Engineering (AI / ML)
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                Rigorous foundations in deep neural networks, machine intelligence, distributed systems, and real-world industrial software engineering.
+              </p>
+<div class="flex flex-wrap gap-2 text-xs font-label-md text-on-surface-variant mb-6">
+<span class="bg-surface-container px-2 py-1 rounded">160 Credits</span>
+<span class="bg-surface-container px-2 py-1 rounded">Internship Mandatory</span>
+<span class="bg-surface-container px-2 py-1 rounded">NBA Accredited</span>
+</div>
+</div>
+<div class="pt-4 border-t border-surface-variant flex items-center justify-between">
+<span class="text-xs font-semibold text-primary">Eligibility: 10+2 with PCM (60%+)</span>
+<a class="text-secondary font-label-md text-label-md hover:underline font-bold flex items-center gap-1" href="admissions.html">
+                Apply <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program Card 2 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-6 hover:shadow-lg transition-all group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-eyebrow text-label-eyebrow uppercase font-bold">Postgraduate</span>
+<span class="text-xs text-on-surface-variant font-medium">2 Years · Full-Time</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-serif text-primary group-hover:text-secondary transition-colors mb-2">
+                Master of Business Administration (MBA)
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                Dual specialization options in Financial Analytics, Marketing &amp; Strategy, and Human Capital Leadership with global exchange terms.
+              </p>
+<div class="flex flex-wrap gap-2 text-xs font-label-md text-on-surface-variant mb-6">
+<span class="bg-surface-container px-2 py-1 rounded">Case-Study Pedagogy</span>
+<span class="bg-surface-container px-2 py-1 rounded">Summer Placement</span>
+<span class="bg-surface-container px-2 py-1 rounded">AICTE Approved</span>
+</div>
+</div>
+<div class="pt-4 border-t border-surface-variant flex items-center justify-between">
+<span class="text-xs font-semibold text-primary">Eligibility: Bachelor's Degree + CAT/MAT</span>
+<a class="text-secondary font-label-md text-label-md hover:underline font-bold flex items-center gap-1" href="admissions.html">
+                Apply <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program Card 3 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-6 hover:shadow-lg transition-all group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-1 rounded bg-[#FEF3C7] text-[#92400E] font-label-eyebrow text-label-eyebrow uppercase font-bold">Undergraduate</span>
+<span class="text-xs text-on-surface-variant font-medium">3 Years · Full-Time</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-serif text-primary group-hover:text-secondary transition-colors mb-2">
+                Bachelor of Computer Applications (BCA)
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                Modern curriculum focusing on Full-Stack Development, Cloud Architecture, Mobile App Engineering, and Cyber Security principles.
+              </p>
+<div class="flex flex-wrap gap-2 text-xs font-label-md text-on-surface-variant mb-6">
+<span class="bg-surface-container px-2 py-1 rounded">Live Projects</span>
+<span class="bg-surface-container px-2 py-1 rounded">Incubator Access</span>
+<span class="bg-surface-container px-2 py-1 rounded">Industry Certifications</span>
+</div>
+</div>
+<div class="pt-4 border-t border-surface-variant flex items-center justify-between">
+<span class="text-xs font-semibold text-primary">Eligibility: 10+2 with Math/Stats</span>
+<a class="text-secondary font-label-md text-label-md hover:underline font-bold flex items-center gap-1" href="admissions.html">
+                Apply <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program Card 4 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-6 hover:shadow-lg transition-all group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-1 rounded bg-[#FEF3C7] text-[#92400E] font-label-eyebrow text-label-eyebrow uppercase font-bold">Undergraduate</span>
+<span class="text-xs text-on-surface-variant font-medium">3 Years · Full-Time</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-serif text-primary group-hover:text-secondary transition-colors mb-2">
+                Bachelor of Commerce (B.Com Honors)
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                Comprehensive training in International Taxation, Forensic Accounting, Auditing Standards, and Corporate Financial Markets.
+              </p>
+<div class="flex flex-wrap gap-2 text-xs font-label-md text-on-surface-variant mb-6">
+<span class="bg-surface-container px-2 py-1 rounded">ACCA Aligned</span>
+<span class="bg-surface-container px-2 py-1 rounded">Bloomberg Terminal</span>
+<span class="bg-surface-container px-2 py-1 rounded">FinTech Lab</span>
+</div>
+</div>
+<div class="pt-4 border-t border-surface-variant flex items-center justify-between">
+<span class="text-xs font-semibold text-primary">Eligibility: 10+2 Commerce / Equivalent</span>
+<a class="text-secondary font-label-md text-label-md hover:underline font-bold flex items-center gap-1" href="admissions.html">
+                Apply <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program Card 5 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-6 hover:shadow-lg transition-all group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-1 rounded bg-[#FEF3C7] text-[#92400E] font-label-eyebrow text-label-eyebrow uppercase font-bold">Undergraduate</span>
+<span class="text-xs text-on-surface-variant font-medium">3 Years · Full-Time</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-serif text-primary group-hover:text-secondary transition-colors mb-2">
+                B.Sc (Hons) Biotechnology &amp; Genetics
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                Hands-on wet-lab experimentation, genetic modeling, CRISPR exploration, and pharmaceutical bio-process manufacturing.
+              </p>
+<div class="flex flex-wrap gap-2 text-xs font-label-md text-on-surface-variant mb-6">
+<span class="bg-surface-container px-2 py-1 rounded">Bio-Safety Level 2 Lab</span>
+<span class="bg-surface-container px-2 py-1 rounded">Research Thesis</span>
+<span class="bg-surface-container px-2 py-1 rounded">CSIR Mentored</span>
+</div>
+</div>
+<div class="pt-4 border-t border-surface-variant flex items-center justify-between">
+<span class="text-xs font-semibold text-primary">Eligibility: 10+2 with PCB (55%+)</span>
+<a class="text-secondary font-label-md text-label-md hover:underline font-bold flex items-center gap-1" href="admissions.html">
+                Apply <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program Card 6 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-6 hover:shadow-lg transition-all group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-eyebrow text-label-eyebrow uppercase font-bold">Doctorate / Ph.D</span>
+<span class="text-xs text-on-surface-variant font-medium">3 to 5 Years · Research</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-serif text-primary group-hover:text-secondary transition-colors mb-2">
+                Ph.D Doctoral Research Fellowships
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                Institutional stipendiary fellowships across Interdisciplinary Computing, Applied Sciences, Economics, and Humanities.
+              </p>
+<div class="flex flex-wrap gap-2 text-xs font-label-md text-on-surface-variant mb-6">
+<span class="bg-surface-container px-2 py-1 rounded">Full Grant Available</span>
+<span class="bg-surface-container px-2 py-1 rounded">Global Colloquiums</span>
+<span class="bg-surface-container px-2 py-1 rounded">UGC Certified</span>
+</div>
+</div>
+<div class="pt-4 border-t border-surface-variant flex items-center justify-between">
+<span class="text-xs font-semibold text-primary">Eligibility: Master's (55%+) + Entrance Exam</span>
+<a class="text-secondary font-label-md text-label-md hover:underline font-bold flex items-center gap-1" href="admissions.html">
+                Apply <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Banner for Additional Diploma & Professional Certificates -->
+<div class="mt-10 p-6 bg-surface-container rounded-xl border border-surface-variant flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-3xl text-secondary">verified_user</span>
+<div>
+<p class="font-title-md text-title-md text-primary font-bold">Looking for 1-Year Executive Diplomas or Vocational Diplomas?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Over 20+ specialized diplomas in Data Analytics, Journalism, Cyber Law, and Hospital Administration are actively enrolling.</p>
+</div>
+</div>
+<a class="px-5 py-2.5 rounded-lg bg-surface-container-lowest border border-outline/30 hover:border-primary text-primary font-label-lg text-label-lg whitespace-nowrap transition-all font-semibold" href="admissions.html">
+            View All Diploma Programs
+          </a>
+</div>
+</div>
+</section>
+<!-- 6. Campus Life & Student Experience Spotlight -->
+<section class="py-20 bg-background" id="campus-life">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-surface-container border border-surface-variant">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary font-bold tracking-widest">Vibrant Campus Ecosystem</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-serif text-primary">
+              Beyond the Classroom: Life at K.V College
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Education at K.V College transcends lecture halls. We cultivate well-rounded global citizens through 30+ collegiate societies, national level sporting events, and innovation accelerators.
+            </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">sports_soccer</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Olympic-Standard Athletics</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Floodlit football arena, all-weather synthetic track, indoor badminton complex, and Olympic-length swimming pool.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">theater_comedy</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Annual Fest "KSHITIJ" &amp; Arts Guilds</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Inter-collegiate cultural symposia hosting over 10,000 students annually from across the nation.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">Atal Innovation Incubation Cell</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Seed funding, legal patent filing, and angel mentor networks supporting student-led enterprise startups.</p>
+</div>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 text-primary font-label-lg text-label-lg font-bold hover:text-secondary transition-colors underline underline-offset-4" href="#gallery">
+                Explore Student Clubs &amp; Societies Directory
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Bento Grid of Student Moments -->
+<div class="lg:col-span-7">
+<div class="grid grid-cols-2 gap-4">
+<div class="relative rounded-xl overflow-hidden h-64 border border-surface-variant shadow">
+<img class="w-full h-full object-cover" data-alt="Enthusiastic multiracial college students collaborating around a robotic prototype in a well-lit innovation lab. One student holds a microcontroller while others observe coding monitors. The setting is vibrant and modern with university banners and ambient warm tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY7iMFrWFv3MdO7SIXNf2FNYAZvNBEpLus0SLi_-vXopbBlei30ROg9pBtSzDExoW1woNeP93E1n7J1cClVBUW1LMZeS8JwlEUayznhMycu-H79fpE8c-W86HGtIa1oaPY79ewDGTR9ysJIc7st-a8hTRPo3DrpKGLaG0SAWuPFSzzvwarNhrTDVVLoJw6Cddl1nd61MPUouIbGAQYMyOOJg7m2z-BRgOjsjEa7Q_5h4xIpTFKYRF4g3qgwVQuy5aakIwCxR1nBmI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent flex items-end p-4">
+<span class="text-white text-sm font-semibold">Robotics &amp; AI Innovation Cell</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden h-64 border border-surface-variant shadow">
+<img class="w-full h-full object-cover" data-alt="Athletic collegiate students competing on a lush green college soccer pitch during golden hour, with campus spectators cheering from modern bleachers. The setting highlights teamwork, youthful energy, and premier sporting facilities." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpaJK09c3nvwsQn7nQz-Pyz8v1XD3btNSvR65keMhTHYas1mUpsL3gEOzpZJ1KTRKIzixaf0fsfBl8UJ4yCjFJCBCtH81xjrqRSuWxFNCBsf1YYoV876OtFs_QMAzt6dP5tW4Z7eRUek36Ums_JrBCLNqtXe24fu42tc7ySAN21Oe-mTO0dTr4TKzWs_OETT2BZR1Y5PI_-Wa_PlNYV6cPJXckUTk1Oa9iKfP2mauMlnE5GyGlt2zc7wHfWhc873TGZrEkCAV4n7s"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent flex items-end p-4">
+<span class="text-white text-sm font-semibold">Varsity Sports &amp; Athletic Tournaments</span>
+</div>
+</div>
+<div class="col-span-2 relative rounded-xl overflow-hidden h-52 border border-surface-variant shadow">
+<img class="w-full h-full object-cover" data-alt="A grand collegiate open-air amphitheater filled with lively students celebrating a cultural arts and music fest under festive warm fairy lights in the evening. Prestigious college stone facade in the background illuminated with warm gold uplighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ1LegxQSeHUWFQ-rQ2aGkjGsr5DoldjeCHnnG19lQQN10mgK2BFst5Er2JaW3T84yahVsq78urirVviTpH7UiOn2ni02iuUfOTFIUWlKTATiu8MTIuFCJabxii3cAxo2kbYQarzhheDOCuHeax8PJIUzNEyvVQ3fbalQsN1VO2TgyI9nIY3gD35w8C6SIRVanuIzVOvt1My2i-fKuM77AJEIuSXc8utqY0HJ3jkP3r5na-NH2_Z3h3md2vkJPwJO5B5s_egkemPI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-5">
+<div>
+<span class="text-secondary-fixed text-xs font-bold uppercase tracking-wider">Campus Traditions</span>
+<h4 class="text-white font-serif text-lg font-bold">Annual National Cultural Conclave</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Admissions & Virtual Tour CTA Banner -->
+<section class="py-16 bg-primary-container text-on-primary relative overflow-hidden" id="admissions-portal">
+<!-- Ambient light effect -->
+<div class="absolute left-1/2 top-0 -translate-x-1/2 w-[800px] h-32 bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="bg-primary/90 border border-on-primary-container/20 rounded-2xl p-8 lg:p-12 shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-7">
+<span class="px-3 py-1 rounded bg-secondary text-on-secondary font-label-eyebrow text-label-eyebrow uppercase font-bold tracking-widest mb-3 inline-block">
+                Admissions Session 2025–26
+              </span>
+<h2 class="font-headline-lg text-headline-lg font-serif text-on-primary mb-4 leading-tight">
+                Take the First Step Toward Your Bright Future at K.V College
+              </h2>
+<p class="font-body-lg text-body-lg text-surface-variant mb-6 leading-relaxed">
+                Connect with our dedicated academic counselors, attend campus open houses, or submit your online candidature today. Merit scholarships up to 100% are awarded based on qualifying entrance test scores.
+              </p>
+<div class="flex flex-wrap items-center gap-6 text-sm text-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed">assignment_turned_in</span>
+<span>Direct Online Application</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed">support_agent</span>
+<span>Free Career Counseling</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed">account_balance_wallet</span>
+<span>Zero-Cost EMI Fee Plans</span>
+</div>
+</div>
+</div>
+<!-- Quick Inquiry Card -->
+<div class="lg:col-span-5 bg-surface-container-lowest text-on-surface rounded-xl p-6 shadow-lg border border-surface-variant">
+<h3 class="font-title-lg text-title-lg font-serif text-primary mb-1">Request Admissions Kit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Receive course syllabus, fee structure &amp; scholarship criteria directly.</p>
+<form class="space-y-3" onsubmit="event.preventDefault(); alert('Thank you! Your academic kit request has been received. Our counselor will contact you within 24 hours.');">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Full Student Name *</label>
+<input class="w-full px-3 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg text-sm focus:ring-2 focus:ring-primary focus:outline-none" placeholder="e.g. Rahul Sharma" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Email ID *</label>
+<input class="w-full px-3 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg text-sm focus:ring-2 focus:ring-primary focus:outline-none" placeholder="student@gmail.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Phone Number *</label>
+<input class="w-full px-3 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg text-sm focus:ring-2 focus:ring-primary focus:outline-none" placeholder="+91 98765 43210" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Program of Interest *</label>
+<select class="w-full px-3 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg text-sm focus:ring-2 focus:ring-primary focus:outline-none" required="">
+<option value="">Select Academic Stream</option>
+<option value="cs">B.Tech Computer Science &amp; AI</option>
+<option value="bca">Bachelor of Computer Applications (BCA)</option>
+<option value="mba">Master of Business Admin (MBA)</option>
+<option value="bcom">B.Com (Honors) / M.Com</option>
+<option value="bio">B.Sc Biotechnology</option>
+<option value="phd">Ph.D Doctoral Studies</option>
+</select>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg font-bold hover:bg-secondary-container transition-all shadow mt-2" type="submit">
+                  Submit Inquiry &amp; Get Prospectus
+                </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 8. Comprehensive Institutional Footer (Shared Component Anchor) -->
+<footer class="bg-primary dark:bg-surface-container-lowest text-on-primary dark:text-primary border-t border-primary-container dark:border-surface-variant" id="contact">
+<div class="w-full mx-auto px-6 py-12 max-w-7xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-primary-container/40">
+<!-- Institutional Identity & Accreditation -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-secondary">school</span>
+</div>
+<div>
+<span class="text-headline-sm font-headline-sm text-on-primary dark:text-primary font-bold tracking-tight">K.V College</span>
+<p class="text-xs text-on-primary-container">Affiliated to State Central University · Est. 1984</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container dark:text-on-surface-variant leading-relaxed max-w-sm">
+            Dedicated to imparting value-based educational experiences and spearheading technological innovation. Certified Grade 'A+' by the National Assessment and Accreditation Council (NAAC).
+          </p>
+<div class="flex items-center gap-3 pt-2">
+<span class="px-2.5 py-1 bg-surface-container-low/10 rounded border border-surface-variant/20 text-xs font-semibold text-secondary-fixed">
+              NAAC Grade 'A+'
+            </span>
+<span class="px-2.5 py-1 bg-surface-container-low/10 rounded border border-surface-variant/20 text-xs font-semibold text-secondary-fixed">
+              UGC Section 2(f) &amp; 12(B)
+            </span>
+<span class="px-2.5 py-1 bg-surface-container-low/10 rounded border border-surface-variant/20 text-xs font-semibold text-secondary-fixed">
+              NIRF Top 100
+            </span>
+</div>
+</div>
+<!-- Campus Location & Helpline -->
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-primary mb-4 uppercase tracking-wider">Campus Address</h4>
+<address class="not-italic text-on-primary-container dark:text-on-surface-variant font-body-sm text-body-sm space-y-2">
+<p>K.V College Main Campus,</p>
+<p>Knowledge Boulevard, Sector 12,</p>
+<p>Institutional Area, New Delhi — 110078</p>
+<div class="pt-2 text-surface-variant">
+<p class="font-medium text-white">General Helpline:</p>
+<p>+91 (0) 11 2894 5600 / 5601</p>
+<p>registrar@kvcollege.edu.in</p>
+</div>
+</address>
+</div>
+<!-- Quick Links (FromJson) -->
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-primary mb-4 uppercase tracking-wider">Key Portals</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors focus:ring-2 focus:ring-secondary focus:outline-none" href="#accreditation">Accreditation &amp; Approvals</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors focus:ring-2 focus:ring-secondary focus:outline-none" href="#map">Campus Map &amp; Directions</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors focus:ring-2 focus:ring-secondary focus:outline-none" href="#emergency">Emergency Contacts</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors focus:ring-2 focus:ring-secondary focus:outline-none" href="#faculty">Faculty Directory</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors focus:ring-2 focus:ring-secondary focus:outline-none" href="#alumni">Alumni Portal</a></li>
+</ul>
+</div>
+<!-- Statutory Compliance & Welfare -->
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-primary mb-4 uppercase tracking-wider">Statutory Cells</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#anti-ragging">Anti-Ragging Squad (Toll Free)</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#grievance">Student Grievance Redressal</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#iqac">Internal Quality Assurance Cell (IQAC)</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#hostel-rules">Hostel Rules &amp; Conduct Code</a></li>
+<li><a class="text-on-primary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#careers">Careers @ K.V College</a></li>
+</ul>
+</div>
+</div>
+<!-- Copyright Sub-footer -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-primary-container">
+<p>© 2025 K.V College. Accredited Grade 'A' Institution. All rights reserved.</p>
+<div class="flex items-center gap-6 text-xs">
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#privacy">Privacy Policy</a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#terms">Terms of Service</a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#disclaimer">Mandatory Disclosure</a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#sitemap">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({duration: 800, once: true});</script>
+</body></html>
